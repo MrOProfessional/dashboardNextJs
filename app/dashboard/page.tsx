@@ -13,6 +13,7 @@ export default async function Page() {
         Dashboard
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {/* streaming */}
         <Suspense fallback={<CardsSkeleton />}>
           <CardWrapper />
         </Suspense>
